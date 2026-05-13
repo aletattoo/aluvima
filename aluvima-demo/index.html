@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- MODO DEMO: Evitar indexación en Google -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <title>Aluvima Mérida – Modernizando espacios con calidad y categoría</title>
+  <meta name="description" content="Distribución, fabricación e instalación de aluminio, vidrio y acero en Mérida, Venezuela." />
+
+  <!-- Open Graph (redes sociales) -->
+  <meta property="og:title" content="Aluvima Mérida" />
+  <meta property="og:description" content="Modernizando espacios con calidad y categoría." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Iconos (Lucide via CDN) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       MODAL DE BLOQUEO DEMO
+  ═══════════════════════════════════════════════ -->
+  <div id="demo-lock-overlay" class="demo-lock-overlay" role="dialog" aria-modal="true" aria-labelledby="demo-lock-title">
+    <div class="demo-lock-box">
+      <div class="demo-lock-logo">
+        <span class="logo-text">Aluvima <span class="logo-accent">Mérida</span></span>
+      </div>
+      <div class="demo-badge">⚠️ MODO DEMO / PRIVADO ⚠️</div>
+      <h2 id="demo-lock-title">Acceso Restringido</h2>
+      <p>Esta página está en desarrollo. Ingresa la contraseña para continuar.</p>
+      <form id="demo-lock-form" novalidate>
+        <div class="input-group">
+          <input
+            type="password"
+            id="demo-password"
+            placeholder="Contraseña de acceso"
+            autocomplete="current-password"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Entrar</button>
+        </div>
+        <p id="demo-lock-error" class="demo-lock-error" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       CONTENIDO PRINCIPAL (oculto hasta autenticación)
+  ═══════════════════════════════════════════════ -->
+  <div id="main-content" class="main-content hidden">
+
+    <!-- BANNER DEMO -->
+    <div class="demo-banner" role="alert">
+      ⚠️ SITIO EN MODO DEMO — No compartir con clientes. Solo para revisión interna. ⚠️
+    </div>
+
+    <!-- ─── HEADER / NAV ─── -->
+    <header class="site-header" id="site-header">
+      <nav class="nav container">
+        <a href="#inicio" class="nav-logo">
+          Aluvima <span class="logo-accent">Mérida</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+          <li><a href="#pagos" class="nav-link">Pagos</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="cart-btn" id="cart-btn" aria-label="Ver carrito">
+          <i data-lucide="shopping-cart"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ─── HERO SECTION ─── -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-content container">
+        <span class="hero-eyebrow">Mérida, Venezuela · Desde el Sector El Caucho</span>
+        <h1 class="hero-title">
+          Tu espacio merece<br />
+          <span class="hero-title-accent">lo mejor en vidrio,<br />aluminio y acero.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Modernizando espacios con calidad y categoría.<br />
+          Fabricación, distribución e instalación profesional a tu medida.
+        </p>
+        <div class="hero-ctas">
+          <a href="#catalogo" class="btn btn-primary btn-lg">Ver Catálogo</a>
+          <a href="https://wa.me/584247247358" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+            <i data-lucide="message-circle"></i> Cotizar por WhatsApp
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">+15</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">Stock</span>
+            <span class="stat-label">Disponibilidad inmediata</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Instalación profesional</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── QUIÉNES SOMOS ─── -->
+    <section class="about" id="nosotros">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Nuestra Historia</span>
+          <h2 class="section-title">¿Por qué elegir Aluvima Mérida?</h2>
+          <p class="section-subtitle">
+            Somos la empresa de referencia en Mérida para todo lo relacionado con aluminio, vidrio y acero inoxidable.
+            Combinamos experiencia local, materiales de primera calidad y un equipo de instaladores certificados.
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon"><i data-lucide="shield-check"></i></div>
+            <h3>Calidad Garantizada</h3>
+            <p>Trabajamos exclusivamente con materiales certificados. Cada proyecto lleva el sello de calidad Aluvima.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon"><i data-lucide="zap"></i></div>
+            <h3>Stock Inmediato</h3>
+            <p>Vidrios templados de seguridad en medidas estándar disponibles de inmediato. Sin esperas innecesarias.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon"><i data-lucide="ruler"></i></div>
+            <h3>A Tu Medida</h3>
+            <p>Fabricamos e instalamos ventanas, puertas y estructuras completamente personalizadas para tu espacio.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon"><i data-lucide="map-pin"></i></div>
+            <h3>Presencia Local</h3>
+            <p>Ubicados en el corazón de Mérida, conocemos las necesidades de nuestra ciudad y respondemos rápido.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon"><i data-lucide="wrench"></i></div>
+            <h3>Instalación Profesional</h3>
+            <p>Nuestro equipo técnico se encarga de todo: medición, fabricación e instalación con acabado impecable.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon"><i data-lucide="headphones"></i></div>
+            <h3>Asesoría Personalizada</h3>
+            <p>Te guiamos desde la selección del material hasta el acabado final. Tu satisfacción es nuestra prioridad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CATÁLOGO DE PRODUCTOS ─── -->
+    <section class="catalog" id="catalogo">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Nuestros Productos</span>
+          <h2 class="section-title">Catálogo de Productos y Servicios</h2>
+          <p class="section-subtitle">
+            Selecciona los productos que necesitas y arma tu pedido de prueba directamente desde aquí.
+          </p>
+          <div class="demo-note">
+            📋 <strong>Modo Demo:</strong> Los precios mostrados son referenciales y solo para pruebas internas.
+          </div>
+        </div>
+
+        <!-- Filtros de categoría -->
+        <div class="filter-bar" role="group" aria-label="Filtrar por categoría">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="vidrio">Vidrio</button>
+          <button class="filter-btn" data-filter="aluminio">Aluminio</button>
+          <button class="filter-btn" data-filter="acero">Acero Inoxidable</button>
+          <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+        </div>
+
+        <!-- Grid de productos (renderizado por JS) -->
+        <div class="products-grid" id="products-grid" aria-label="Catálogo de productos">
+          <!-- Tarjetas inyectadas por products.js + main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PASARELAS DE PAGO ─── -->
+    <section class="payments" id="pagos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Métodos de Pago</span>
+          <h2 class="section-title">Pasarelas de Pago Aceptadas</h2>
+          <p class="section-subtitle">
+            Aceptamos los principales métodos de pago en Venezuela. Selecciona el que prefieras y haz clic para copiar los datos.
+          </p>
+        </div>
+
+        <!-- Grid de pasarelas (renderizado por JS desde config.js) -->
+        <div class="payments-grid" id="payments-grid" aria-label="Pasarelas de pago disponibles">
+          <!-- Tarjetas inyectadas por main.js -->
+        </div>
+
+        <p class="payments-note">
+          <i data-lucide="info"></i>
+          Después de realizar tu pago, envíanos el comprobante por WhatsApp para confirmar tu pedido.
+        </p>
+      </div>
+    </section>
+
+    <!-- ─── CONTACTO Y UBICACIÓN ─── -->
+    <section class="contact" id="contacto">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Encuéntranos</span>
+          <h2 class="section-title">Ubicación y Horarios</h2>
+          <p class="section-subtitle">Visítanos en nuestra sala de exhibición o contáctanos directamente.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <h4>Dirección</h4>
+                <p>Sector El Caucho, Av. Los Próceres<br />Mérida, Venezuela</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="clock"></i></div>
+              <div>
+                <h4>Horario de Atención</h4>
+                <p>Lunes a Viernes<br />7:30 AM – 12:00 PM · 1:00 PM – 4:00 PM</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="phone"></i></div>
+              <div>
+                <h4>Teléfonos</h4>
+                <p>
+                  <a href="tel:+584247247358">0424-724 7358</a><br />
+                  <a href="tel:+582744160252">0274-416 0252</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="message-circle"></i></div>
+              <div>
+                <h4>WhatsApp</h4>
+                <a href="https://wa.me/584247247358" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                  Escribir por WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-map">
+            <!-- El iframe se inyecta dinámicamente desde config.js (mapa.consulta + mapa.zoom) -->
+            <iframe
+              id="aluvima-map"
+              title="Ubicación Aluvima Mérida"
+              width="100%"
+              height="350"
+              style="border:0; border-radius: var(--radius-md);"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <a id="aluvima-map-link" href="#" target="_blank" rel="noopener" class="map-open-link">
+              <i data-lucide="external-link"></i> Abrir en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="nav-logo">Aluvima <span class="logo-accent">Mérida</span></span>
+            <p>Modernizando espacios con calidad y categoría.</p>
+            <p class="footer-address">Sector El Caucho, Av. Los Próceres · Mérida, Venezuela</p>
+          </div>
+          <div class="footer-links">
+            <h5>Navegación</h5>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#catalogo">Catálogo</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h5>Contacto</h5>
+            <p><a href="tel:+584247247358">0424-724 7358</a></p>
+            <p><a href="tel:+582744160252">0274-416 0252</a></p>
+            <p>Lun–Vie: 7:30 AM – 4:00 PM</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Aluvima Mérida. Todos los derechos reservados.</p>
+          <p class="footer-demo-note">⚠️ Sitio en Modo Demo — No indexado en buscadores.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /#main-content -->
+
+  <!-- ═══════════════════════════════════════════════
+       PANEL LATERAL DEL CARRITO
+  ═══════════════════════════════════════════════ -->
+  <aside class="cart-panel" id="cart-panel" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-panel-header">
+      <h3>🛒 Tu Pedido</h3>
+      <button class="cart-close-btn" id="cart-close-btn" aria-label="Cerrar carrito">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <div class="cart-panel-body" id="cart-items-container">
+      <!-- Ítems inyectados por cart.js -->
+      <div class="cart-empty" id="cart-empty">
+        <i data-lucide="package-open"></i>
+        <p>Tu carrito está vacío.</p>
+        <a href="#catalogo" class="btn btn-outline btn-sm">Ver Catálogo</a>
+      </div>
+    </div>
+    <div class="cart-panel-footer" id="cart-footer" style="display:none;">
+      <div class="cart-summary">
+        <div class="cart-summary-row">
+          <span>Subtotal:</span>
+          <span id="cart-subtotal">$0.00</span>
+        </div>
+        <div class="cart-summary-row cart-total-row">
+          <span>Total estimado:</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <p class="cart-disclaimer">* Precios referenciales de prueba. Sujetos a confirmación.</p>
+      </div>
+      <div class="cart-payment-select">
+        <label for="cart-payment-method">Método de pago preferido</label>
+        <select id="cart-payment-method" aria-label="Selecciona método de pago">
+          <!-- Opciones inyectadas desde config.js -->
+        </select>
+      </div>
+      <button class="btn btn-whatsapp btn-lg btn-block" id="checkout-btn">
+        <i data-lucide="send"></i> Finalizar Pedido de Prueba
+      </button>
+    </div>
+  </aside>
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <!-- ═══════════════════════════════════════════════
+       SCRIPTS (orden importa)
+  ═══════════════════════════════════════════════ -->
+  <!-- ⚙️ Configuración editable (¡EDITA AQUÍ tus datos de pago, contacto, mapa!) -->
+  <script src="js/config.js"></script>
+  <script src="js/demo-lock.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
